@@ -1,0 +1,41 @@
+body {
+    padding: 1%;
+}
+
+#titulo {
+    text-align: center;
+    width: 89%;
+    background-color: yellow;
+    display: inline-block;
+    margin-bottom: 0.5%;
+}
+
+#fuenteTitulo {
+    padding-left: 11%;
+}
+
+#fechaYHora {
+    width: 10%;
+    background-color: red;
+    display: inline-block;
+}
+
+#menuPrincipal {
+    width: 100%;
+}
+
+.opcionMenu {
+    display: inline-block;
+    background-color: blue;
+    width: 24.7%;
+    text-align: center;
+}
+
+#izquierda {
+    width: 30%;
+    padding: 1%;
+}
+
+#textoLogo {
+    text-align: justify;
+}
