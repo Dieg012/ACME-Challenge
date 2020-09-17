@@ -1,0 +1,63 @@
+body {
+    padding: 1%;
+}
+
+#titulo {
+    text-align: center;
+    width: 89%;
+    background-color:#f1c40f;
+    display: inline-block;
+    margin-bottom: 0.5%;
+}
+
+#fuenteTitulo {
+    padding-left: 11%;
+}
+
+#fechaYHora {
+    width: 10%;
+    background-color: red;
+    display: inline-block;
+}
+
+#menuPrincipal {
+    width: 100%;
+}
+
+.opcionMenu {
+    display: inline-block;
+    background-color: #3498db;
+    width: 24.7%;
+    text-align: center;
+}
+.opcionMenu:hover{
+    background-color:#80b2d3 ;
+}
+#izquierda {
+    width: 30%;
+    padding: 1%;
+    display: inline-block;    
+    float: left;
+}
+
+#textoLogo {
+    text-align: justify;
+}
+
+#contenido {
+    width: 64.7%;
+    padding: 1%;
+    padding-left: 2%;
+    display: inline;
+    background-color: #5c6874 ;
+    float: left;
+    margin-top: 11px;
+}
+
+#textoContenido {
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
