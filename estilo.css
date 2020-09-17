@@ -49,5 +49,8 @@ body {
     display: inline;
     background-color: pink;
     float: left;
+}
+
+#textoContenido {
     text-align: justify;
 }
