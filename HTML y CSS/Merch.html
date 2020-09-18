@@ -5,8 +5,9 @@
     <style> body{font-family: 'Roboto', sans-serif;}</style>
     <meta charset="UTF-8">
     <title>Better Call Saul</title>
-    <link rel="stylesheet" href="estiloReparto.css">
+    <link rel="stylesheet" href="estiloMerch.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <scrip type="text/javascript" src="scriptPrueba.js"></scrip>
 </head>
 <body>
    <header>
@@ -29,33 +30,42 @@
            <div class="opcionMenu">
                <h2>MERCHANDISING</h2>
            </div>
-            <!--<h2 class="tituloMenu">INICIO</h2>
-            <h2 class="tituloMenu">TEMPORADAS</h2>
-            <h2 class="tituloMenu">REPARTO</h2>
-            <h2 class="tituloMenu">MERCHANDISING</h2>-->
         </div>
    </header>
     <main>
-        <div class="contenedorReparto">
-            <div class="actores"><img src="Imagenes/Odenkirk.jpg" width="50%" height="50%"><h3>Bob Odenkirk</h3><p>as Saul Goodman</p><p>(Illinois, 1962)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>
-            <div class="actores"><img src="Imagenes/Seehorn.jpg" width="50%" height="50%"><h3>Rhea Seehorn</h3><p>as Kim Wexler</p><p>(Virginia, 1975)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>
-            <div class="actores"><img src="Imagenes/Banks.jpg" width="50%" height="50%"><h3>Jonathan Banks</h3><p>as Mike Ehrmantraut</p><p>(Washington, 1947)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>        
-            <div class="actores"><img src="Imagenes/Mando.jpg" width="50%" height="50%"><h3>Michael Mando</h3><p>as Nacho Vargas</p><p>(Canada, 1981)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>
-            <div class="actores"><img src="Imagenes/Mckean.jpg" width="50%" height="50%"><h3>Michael McKean</h3><p>as Chuck McGill</p><p>(New York, 1947)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>
+        <div class="contenedorMerch">
+           <div id="menuLateral">
+               <div class="submenu"><h3>ROPA</h3></div>
+               <div class="submenu" onclick="changeMerch()"><h3>DVD/BLU RAY</h3></div>
+               <div class="submenu"><h3>TAZAS</h3></div>
+               <div class="submenu"><h3>OTROS</h3></div>
+           </div>
+           <div id="productos">
+               <div class="grid-container" id="productosMerch">
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa1.jfif" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+                    
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa2.jfif" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+                    
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa3.jfif" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+                    
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa4.jfif" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+                    
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa5.jpeg" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+                    
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa6.jpeg" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+                   
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa7.jpeg" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+                    
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa8.jpeg" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+                    
+                    <div class="grid-item"><img class="imgProducto" src="../Imagenes/Productos/ropa9.jpeg" width="50%" height="50%"><br><br><br><a class="productLink" href="https://www.paradisoclothing.com/better-call-saul-t-shirt-breaking-bad-i-can-make-it-legal-mens-white/">I can make it legal T shirt</a></div>
+               </div>
+           </div>
         </div>
     </main>
     <footer>
         
     </footer>
+    <script ></script>
 </body>
 </html>

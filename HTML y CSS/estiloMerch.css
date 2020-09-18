@@ -1,0 +1,70 @@
+body {
+    padding: 1%;
+}
+
+#titulo {
+    text-align: center;
+    width: 89%;
+    background-color: #f1c40f;
+    display: inline-block;
+    margin-bottom: 0.5%;
+}
+
+#fuenteTitulo {
+    padding-left: 11%;
+}
+
+#fechaYHora {
+    width: 10%;
+    background-color: red;
+    display: inline-block;
+}
+
+#menuPrincipal {
+    width: 100%;
+}
+
+.opcionMenu {
+    display: inline-block;
+    background-color: #3498db;
+    width: 24.7%;
+    text-align: center;
+}
+.opcionMenu:hover{
+    background-color:#80b2d3 ;
+}
+
+#menuLateral {
+    width: 25%;
+    float: left;
+}
+
+.submenu {
+    margin-left: 10%;
+}
+
+.grid-container {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 25% 25% 25%;
+    padding: 5px;
+  }
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+  }
+
+.imgProducto {
+    margin-top: 4%;
+}
+
+.productLink {
+    color: black;
+    font-size: 14px;
+}
