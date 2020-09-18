@@ -1,11 +1,12 @@
 body {
     padding: 1%;
+    background-color:#ffdd67;
 }
 
 #titulo {
     text-align: center;
     width: 86%;
-    background-color:#f1c40f;
+    background-color:#ffdd67;
     display: inline-block;
     margin-bottom: 0.5%;
 }
@@ -26,13 +27,13 @@ body {
 
 .opcionMenu {
     display: inline-block;
-    background-color:#3498db;
+    background-color: #ff8a5c;
     width: 24.7%;
     text-align: center;
     
 }
 .opcionMenu:hover{
-    background-color:#80b2d3 ;
+    background-color:#f7a98a ;
 }
 #izquierda {
     width: 30%;
