@@ -45,10 +45,12 @@ body {
 
 .grid-container {
     display: grid;
+    height: 50em;
     grid-row-gap: 10px;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 25% 25% 25%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 32% 32% 32%;
     padding: 5px;
+    padding-left: 10%;
   }
   
 .grid-item {
@@ -56,7 +58,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 14px;
     text-align: center;
-    width: 90%;
+    width: 70%;
     height: 100%;
   }
 
@@ -67,4 +69,11 @@ body {
 .productLink {
     color: black;
     font-size: 14px;
+}
+
+
+
+
+footer {
+    text-align: center;
 }
