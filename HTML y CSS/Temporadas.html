@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <style> body{font-family: 'Roboto', sans-serif;}</style>
     <meta charset="UTF-8">
     <title>Better Call Saul</title>
-    <link rel="stylesheet" href="estiloTemp.css">
+    <link rel="stylesheet" href="estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <scrip type="text/javascript" src="scriptPrueba.js"></scrip>
 </head>
@@ -19,39 +17,43 @@
         </div>
         <div id="menuPrincipal">
             <div class="opcionMenu">
-                <a href="inicio.html"><h2>Main</h2></a>
+                <a href="inicio.html"><h2>MAIN</h2></a>
            </div>
            <div class="opcionMenu">
-            <a href="Temporadas.html"><h2>Seasons</h2></a>
+            <a href="Temporadas.html"><h2>SEASONS</h2></a>
            </div>
            <div class="opcionMenu">
-            <a href="Reparto.html"><h2>Casting</h2></a>
+            <a href="Reparto.html"><h2>CASTING</h2></a>
            </div>
            <div class="opcionMenu">
-               <h2>Merch</h2>
+               <a href="Merch.html"><h2>MERCH</h2></a>
            </div>
         </div>
    </header>
-    <main>
+    <main id="mainTemp">
         <div class="contenedorTemp">
-           <div id="menuLateral">
+           <div id="menuLateralTemp">
                <div class="submenu" style="cursor: pointer" onclick="changeProductos('S1Episodes')" id="S1Episodes"><h3>Season 1 Episodes</h3></div>
                <div class="submenu" style="cursor: pointer" onclick="changeProductos('S1Trailer')" id="S1Trailer"><h3>Season 1 Trailer</h3></div>
                <div class="submenu" style="cursor: pointer" onclick="changeProductos('S2Episodes')" id="S2Episodes"><h3>Season 2 Episodes</h3></div>
                <div class="submenu" style="cursor: pointer" onclick="changeProductos('S2Trailer')" id="S2Trailer"><h3>Season 2 Trailer</h3></div>
            </div>
            <div id="contenedor">
-               <div class="grid-container" id="Temporadas">
-                    <div class="grid-item"><h5>1.One</h5><img src="Imagenes/1.1.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>2.Mijo</h5><img  src="Imagenes/1.2.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>3.Nacho</h5><img  src="Imagenes/1.3.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>4.Hero</h5><img  src="Imagenes/1.4.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>5.Alpine Shepper Boy</h5><img  src="Imagenes/1.5.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>6.Five-O</h5><img  src="Imagenes/1.6.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>7.Bingo</h5><img  src="Imagenes/1.7.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>8.RICO</h5><img  src="Imagenes/1.8.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>9.Pimiento</h5><img  src="Imagenes/1.9.jpg" width="100%" height="80%"></div>
-                    <div class="grid-item"><h5>10.Marco</h5><img  src="Imagenes/1.10.jpg" width="100%" height="80%"></div>
+              <div class="grid-containerTitulo">
+                   <div id="grid-titulo"><h1>SEASON 1 EPISODES</h1></div>
+              </div>
+               <div class="grid-containerTemp" id="Temporadas">
+                    
+                    <div class="grid-itemTemp"><h5>1.One</h5><img src="Imagenes/1.1.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>2.Mijo</h5><img  src="Imagenes/1.2.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>3.Nacho</h5><img  src="Imagenes/1.3.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>4.Hero</h5><img  src="Imagenes/1.4.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>5.Alpine Shepper Boy</h5><img  src="Imagenes/1.5.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>6.Five-O</h5><img  src="Imagenes/1.6.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>7.Bingo</h5><img  src="Imagenes/1.7.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>8.RICO</h5><img  src="Imagenes/1.8.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>9.Pimiento</h5><img  src="Imagenes/1.9.jpg" width="100%" height="70%"></div>
+                    <div class="grid-itemTemp"><h5>10.Marco</h5><img  src="Imagenes/1.10.jpg" width="100%" height="70%"></div>
                </div>
            </div>
         </div>
@@ -64,19 +66,19 @@
             var menu = menuID;
             
             if (menu == "S1Episodes") {
-                document.getElementById('contenedor').innerHTML = '<div class="grid-container" id="Temporadas"><div class="grid-item"><h5>1.One</h5><img src="Imagenes/1.1.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>2.Mijo</h5><img  src="Imagenes/1.2.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>3.Nacho</h5><img  src="Imagenes/1.3.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>4.Hero</h5><img  src="Imagenes/1.4.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>5.Alpine Shepper Boy</h5><img  src="Imagenes/1.5.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>6.Five-O</h5><img  src="Imagenes/1.6.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>7.Bingo</h5><img  src="Imagenes/1.7.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>8.RICO</h5><img  src="Imagenes/1.8.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>9.Pimiento</h5><img  src="Imagenes/1.9.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>10.Marco</h5><img  src="Imagenes/1.10.jpg" width="100%" height="80%"></div></div>'
+                document.getElementById('contenedor').innerHTML = '<div class="grid-containerTitulo"><div id="grid-titulo"><h1>SEASON 1 EPISODES</h1></div></div><div class="grid-containerTemp" id="Temporadas"><div class="grid-itemTemp"><h5>1.One</h5><img src="Imagenes/1.1.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>2.Mijo</h5><img  src="Imagenes/1.2.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>3.Nacho</h5><img  src="Imagenes/1.3.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>4.Hero</h5><img  src="Imagenes/1.4.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>5.Alpine Shepper Boy</h5><img  src="Imagenes/1.5.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>6.Five-O</h5><img  src="Imagenes/1.6.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>7.Bingo</h5><img  src="Imagenes/1.7.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>8.RICO</h5><img  src="Imagenes/1.8.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>9.Pimiento</h5><img  src="Imagenes/1.9.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>10.Marco</h5><img  src="Imagenes/1.10.jpg" width="100%" height="70%"></div></div>'
             }
             
             else if (menu == "S1Trailer") {
-                document.getElementById('contenedor').innerHTML = '<div><iframe width="660" height="415" src="https://www.youtube.com/embed/9q4qzYrHVmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+                document.getElementById('contenedor').innerHTML = '<div class="grid-containerTitulo"><div id="grid-titulo"><h1>SEASON 1 TRAILER</h1></div> </div><div><iframe width="660" height="415" src="https://www.youtube.com/embed/9q4qzYrHVmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
             }
             
             else if (menu == "S2Episodes") {
-                document.getElementById('contenedor').innerHTML = '<div class="grid-container" id="Temporadas"><div class="grid-item"><h5>1.Switch</h5><img src="Imagenes/2.1.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>2.Cobbler</h5><img  src="Imagenes/2.2.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>3.Amarillo</h5><img  src="Imagenes/3.3.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>4.Gloves Off</h5><img  src="Imagenes/2.4.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>5.Rebecca</h5><img  src="Imagenes/2.5.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>6.Bali Hai</h5><img  src="Imagenes/2.6.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>7.Inflatable</h5><img  src="Imagenes/2.7.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>8.Fifi</h5><img  src="Imagenes/2.8.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>9.Nailed</h5><img  src="Imagenes/2.9.jpg" width="100%" height="80%"></div><div class="grid-item"><h5>10.Klick</h5><img  src="Imagenes/2.10.jpg" width="100%" height="80%"></div></div>'
+                document.getElementById('contenedor').innerHTML = '<div class="grid-containerTitulo"><div id="grid-titulo"><h1>SEASON 2 EPISODES</h1></div></div><div class="grid-containerTemp" id="Temporadas"><div class="grid-itemTemp"><h5>1.Switch</h5><img src="Imagenes/2.1.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>2.Cobbler</h5><img  src="Imagenes/2.2.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>3.Amarillo</h5><img  src="Imagenes/2.3.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>4.Gloves Off</h5><img  src="Imagenes/2.4.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>5.Rebecca</h5><img  src="Imagenes/2.5.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>6.Bali Hai</h5><img  src="Imagenes/2.6.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>7.Inflatable</h5><img  src="Imagenes/2.7.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>8.Fifi</h5><img  src="Imagenes/2.8.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>9.Nailed</h5><img  src="Imagenes/2.9.jpg" width="100%" height="70%"></div><div class="grid-itemTemp"><h5>10.Klick</h5><img  src="Imagenes/2.10.jpg" width="100%" height="70%"></div></div>'
             }
             
             else {
-                document.getElementById('contenedor').innerHTML = '<div><iframe width="660" height="415" src="https://www.youtube.com/watch?v=4niT56XdMXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+                document.getElementById('contenedor').innerHTML = '<div class="grid-containerTitulo"><div id="grid-titulo"><h1>SEASON 2 TRAILER</h1></div></div><div><iframe width="660" height="415" src="https://www.youtube.com/embed/4niT56XdMXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
             }
         }
     </script>

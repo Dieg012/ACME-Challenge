@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     padding: 1%;
-    background-color: #ffdd67;
+    font-family: "Roboto";
 }
 
 #titulo {
     text-align: center;
     width: 89%;
-    background-color:#ffdd67;
     display: inline-block;
     margin-bottom: 0.5%;
+    color: #cf455c;
+    font-family: "Poller One";
+    font-size: 34px;
 }
 
 #fuenteTitulo {
@@ -23,43 +29,183 @@ body {
 
 #menuPrincipal {
     width: 100%;
+    background-color: #ffdd67;
+    font-family: "Fugaz One";
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#menuPrincipal a:link, a:visited, a:active {
+    color: black;
+    text-decoration: none;
 }
 
 .opcionMenu {
     display: inline-block;
-    background-color: #ff8a5c;
-    width: 24.7%;
+    width: 24.778%;
     text-align: center;
-    border-radius: 15px;
+    transition: 1s;
+    margin: 0px;
 }
-.opcionMenu:hover{
-    background-color:#f7a98a ;
+.opcionMenu:hover {
+    background-color:#444444;
+    color: white;
 }
+
+.opcionMenu:hover a {
+    color: white;
+}
+
+/*PAGINA INICIO*/
+
 #izquierda {
     width: 30%;
+    height: 50em;
     padding: 1%;
     display: inline-block;    
     float: left;
-}
-
-#textoLogo {
-    text-align: justify;
+    border-right: 2px solid black;
 }
 
 #contenido {
     width: 64.7%;
+    height: 50em;
     padding: 1%;
     padding-left: 2%;
-    display: inline;
-    background-color: #5c6874 ;
+    display: inline-block;
     float: left;
-    margin-top: 11px;
+
 }
 
-#textoContenido {
+main {
+    height: 50em;
+    margin-bottom: 2%;
+}
+
+/*PAGINA TEMPORADAS*/
+
+#mainTemp {
+    height: 60em;
+}
+
+#menuLateralTemp {
+    width: 25%;
+    height: 61.7em;
+    float: left;
+    border-right: 2px solid black;
+}
+
+.grid-containerTemp {
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: 26% 26% 26% 26%;
+    padding: 2em;
+}
+
+.grid-containerTitulo {
+    display: grid;
+    grid-template-columns: 99%;
+    text-align: center;
+}
+
+.grid-itemTemp {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+
+iframe {
+    margin-left: 12%;
+}
+
+/*PAGINA REPARTO*/
+
+#mainReparto {
+    height: 58em;
+    padding: 2em;
+}
+
+#tituloCasting {
+    font-family: "Poller One";
+    margin-bottom: 1em;
+}
+
+#grid-menuSuperior {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-template-columns: 32% 32% 32%;
+    text-align: center;
+}
+
+.imgActores {
+    width: 12em;
+    height: 15em;
+}
+
+.description {
     text-align: justify;
 }
-a{
-    text-decoration: none;
+
+/*PAGINA MERCH*/
+
+#mainMerch {
+    height: 51.9em;
+}
+
+#menuLateral {
+    width: 25%;
+    height: 53.55em;
+    float: left;
+    border-right: 2px solid black;
+}
+
+.submenu{
+    margin-left: 10%;
+    display: block;
+}
+
+.submenu h3 {
+    width: 90%;
+    padding: 5%;
+}
+
+.submenu h3:hover {
+    background-color: #cf455c;
+}
+
+.grid-container {
+    display: grid;
+    height: 50em;
+    grid-row-gap: 10px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 32% 32% 32%;
+    padding: 5px;
+    padding-left: 10%;
+    padding-top: 4%;
+  }
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+  }
+
+.imgProducto {
+    margin-top: 4%;
+}
+
+.productLink {
     color: black;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid black;
 }
