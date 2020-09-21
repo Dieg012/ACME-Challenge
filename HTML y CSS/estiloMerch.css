@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     padding: 1%;
+    font-family: "Roboto";
 }
 
 #titulo {
     text-align: center;
     width: 89%;
-    background-color: #f1c40f;
     display: inline-block;
     margin-bottom: 0.5%;
+    color: #cf455c;
+    font-family: "Poller One";
+    font-size: 34px;
 }
 
 #fuenteTitulo {
@@ -22,26 +29,55 @@ body {
 
 #menuPrincipal {
     width: 100%;
+    background-color: #ffdd67;
+    font-family: "Fugaz One";
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#menuPrincipal a:link, a:visited, a:active {
+    color: black;
+    text-decoration: none;
 }
 
 .opcionMenu {
     display: inline-block;
-    background-color: #3498db;
-    width: 24.7%;
+    width: 24.778%;
     text-align: center;
+    transition: 1s;
+    margin: 0px;
 }
-.opcionMenu:hover{
-    background-color:#80b2d3 ;
+.opcionMenu:hover {
+    background-color:#444444;
+    color: white;
+}
+
+.opcionMenu:hover a {
+    color: white;
 }
 
 #menuLateral {
     width: 25%;
+    height: 53.6em;
     float: left;
+    border-right: 2px solid black;
+    font-family: "Roboto";
 }
 
-.submenu {
+.submenu{
     margin-left: 10%;
+    display: block;
 }
+
+.submenu h3 {
+    width: 90%;
+    padding: 5%;
+}
+
+.submenu h3:hover {
+    background-color: #cf455c;
+}
+
 
 .grid-container {
     display: grid;
@@ -51,6 +87,7 @@ body {
     grid-template-rows: 32% 32% 32%;
     padding: 5px;
     padding-left: 10%;
+    padding-top: 4%;
   }
   
 .grid-item {
@@ -76,4 +113,5 @@ body {
 
 footer {
     text-align: center;
+    border-top: 2px solid black;
 }
