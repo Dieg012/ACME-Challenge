@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php $time=time(); ?>
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style> body{font-family: 'Roboto', sans-serif;}</style>
@@ -14,7 +15,7 @@
            <h1 id="fuenteTitulo">BETTER CALL SAUL</h1>
         </div>
         <div id="fechaYHora">
-            <p>Fecha y Hora</p>
+          <?php echo (date("d/m/y\n H:i:s", $time)); ?>
         </div>
         <div id="menuPrincipal">
            <div class="opcionMenu">
@@ -37,25 +38,54 @@
    </header>
     <main>
         <div class="contenedorReparto">
-            <div class="actores"><img src="Imagenes/Odenkirk.jpg" width="50%" height="50%"><h3>Bob Odenkirk</h3><p>as Saul Goodman</p><p>(Illinois, 1962)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>
-            <div class="actores"><img src="Imagenes/Seehorn.jpg" width="50%" height="50%"><h3>Rhea Seehorn</h3><p>as Kim Wexler</p><p>(Virginia, 1975)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>
-            <div class="actores"><img src="Imagenes/Banks.jpg" width="50%" height="50%"><h3>Jonathan Banks</h3><p>as Mike Ehrmantraut</p><p>(Washington, 1947)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>        
-            <div class="actores"><img src="Imagenes/Mando.jpg" width="50%" height="50%"><h3>Michael Mando</h3><p>as Nacho Vargas</p><p>(Canada, 1981)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>
-            <div class="actores"><img src="Imagenes/Mckean.jpg" width="50%" height="50%"><h3>Michael McKean</h3><p>as Chuck McGill</p><p>(New York, 1947)</p></div>
-            <div class="hide"><p>Robert John Odenkirk (born October 22, 1962) is an American actor, comedian, writer, director, and producer. He is best known for his role as smooth-talking lawyer Saul Goodman on the AMC crime drama 
-                series Breaking Bad and its spin-off Better Call Saul.</p></div>
+            <div class="actores">
+              <img src="Imagenes/Odenkirk.jpg" alt="Odenkirk image"> <hr>
+              <h2>Bob Odenkirk</h2>
+              <div class="description">
+                <p>
+                  Robert John Odenkirk was born in Berwyn, Illinois, to Barbara (Baier) and Walter Odenkirk, who worked in printing.
+                He worked as a DJ for WIDB, his college radio station at Southern Illinois University Carbondale.</p>
+              </div>
+            </div>
+            <div class="actores">
+              <img src="Imagenes/Seehorn.jpg" alt="Seehorn image"> <hr>
+              <h2>Rhea Seehorn</h2>
+              <div class="description">
+                <p>
+                  Rhea Seehorn studied painting and drawing from a young age, following in the footsteps of her father and grandmother.
+                  Although she continued in the visual arts, she also had a growing passion for the movies and theatre and secretly wanted to become an actor.</p>
+              </div>
+            </div>
+            <div class="actores">
+              <img src="Imagenes/Banks.jpg" alt="Jonathan Banks image"> <hr>
+              <h2>Jonathan Banks</h2>
+              <div class="description">
+                <p>
+                  Versatile veteran character actor Jonathan Banks was born in Washington D.C in 1947.
+                  While growing up he always had an interest in acting and stage work, so decided to pursue a career in entertainment.
+                  To this day he is a very accomplished stage actor.</p>
+              </div>
+            </div>
+            <div class="actores">
+              <img src="Imagenes/Mando.jpg" alt="Mando image"> <hr>
+              <h2>Bob Odenkirk</h2>
+              <div class="description">
+                <p>
+                  Robert John Odenkirk was born in Berwyn, Illinois, to Barbara (Baier) and Walter Odenkirk, who worked in printing.
+                He worked as a DJ for WIDB, his college radio station at Southern Illinois University Carbondale.</p>
+              </div>
+            </div>
+            <div class="actores">
+              <img src="Imagenes/Mckean.jpg" alt="Mckean image"> <hr>
+              <h2>Bob Odenkirk</h2>
+              <div class="description">
+                <p>
+                  Michael McKean was born on October 17, 1947 in New York City, New York, USA as Michael John McKean.
+                  He is an actor, known for This Is Spinal Tap (1984), Un poderoso viento (2003) and Better Call Saul (2015).</p>
+              </div>
+            </div>
+
         </div>
     </main>
-    <footer>
-        
-    </footer>
 </body>
 </html>
