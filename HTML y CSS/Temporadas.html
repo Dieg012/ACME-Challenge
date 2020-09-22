@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php $time?>
+    <?php $time=time(); ?>
 <head>
     <meta charset="UTF-8">
     <title>Better Call Saul</title>
@@ -14,7 +14,7 @@
            <h1 id="fuenteTitulo">BETTER CALL SAUL</h1>
         </div>
         <div id="fechaYHora">
-            <?php echo (date("Y/m/d H:i:s", $time)); ?>
+            <?php echo (date("d/m/y\n H:i:s", $time)); ?>
         </div>
         <div id="menuPrincipal">
             <div class="opcionMenu">
